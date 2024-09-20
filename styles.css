@@ -1,74 +1,75 @@
-<style>
-    /* 基本設定 */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden; /* 横スクロールを無効化 */
-    }
-    header {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-    header h1 {
-        margin: 0;
-    }
-    nav {
-        background-color: #333;
-        overflow: hidden;
-        width: 100%;
-    }
-    nav a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
-    nav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    main {
-        padding: 20px;
-        max-width: 1000px;
-        margin: auto;
-        background-color: white;
-        flex: 1;
-        width: 100%;
-    }
-    section {
-        margin-bottom: 40px;
-    }
-    h2 {
-        color: #4CAF50;
-        border-bottom: 2px solid #4CAF50;
-        padding-bottom: 5px;
-    }
-    p {
-        line-height: 1.6;
-    }
-    /* フッター固定 */
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #4CAF50;
-        color: white;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-</style>
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%; /* ページ全体の高さを確保 */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* 横スクロールを無効化 */
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    flex: 1; /* 残りの高さをmainが占めるように */
+    width: 100%;
+}
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+p {
+    line-height: 1.6;
+}
+/* フッター固定 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    flex-shrink: 0; /* フッターが画面下に固定されるように */
+}
