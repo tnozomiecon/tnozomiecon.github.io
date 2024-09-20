@@ -1,96 +1,49 @@
-/* 基本設定 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html, body {
-    height: 100%;
-}
-body {
-    font-family: 'Georgia', serif; /* よりアカデミックな印象に */
-    background-color: #1c1c1c; /* ダークグレーの背景 */
-    color: #eaeaea; /* 優しい白のテキスト */
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden; /* 横スクロールを無効化 */
-}
-header {
-    background-color: #333; /* ダークなヘッダー */
-    color: #f0f0f0;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    border-bottom: 3px solid #555; /* アカデミックで落ち着いた印象を与えるボーダー */
-}
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 2px;
-}
-nav {
-    background-color: #222;
-    overflow: hidden;
-    width: 100%;
-}
-nav a {
-    float: left;
-    display: block;
-    color: #eaeaea;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease; /* 滑らかなホバー効果 */
-}
-nav a:hover {
-    background-color: #444;
-    color: #fff;
-}
-main {
-    padding: 30px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: #2b2b2b; /* 少し明るめのダークグレー */
-    color: #f0f0f0;
-    flex: 1;
-    width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* シックな影で立体感 */
-    border-radius: 8px; /* 角を少し丸めて柔らかさを演出 */
-}
-section {
-    margin-bottom: 40px;
-}
-h2 {
-    color: #88c0d0; /* アカデミックな感じを出す落ち着いたブルー */
-    border-bottom: 2px solid #88c0d0;
-    padding-bottom: 5px;
-    font-size: 1.5em;
-}
-p {
-    line-height: 1.8; /* 読みやすさを重視 */
-    margin-bottom: 20px;
-}
-/* フッター固定 */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #eaeaea;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    flex-shrink: 0;
-    border-top: 3px solid #555; /* 上部にボーダーでアクセント */
-    font-size: 0.9em;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nozomi Takeda Economics - Home</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* リンクのカスタマイズ */
-a {
-    color: #88c0d0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-a:hover {
-    color: #b48ead; /* ホバー時にパープル系に変化 */
-}
+    <header>
+        <h1>Nozomi Takeda</h1>
+        <p>PhD Student in Economics</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Academic Profile</h2>
+        <p>I am currently enrolled in the Ph.D. program in Economics at the University of Tokyo. My areas of interest are macroeconomics, family macroeconomics, and immigration.</p>
+
+        <h2>Upcoming Presentations</h2>
+        <h3>2024</h3>
+        <p>Macroeconomic Conference for Young Economists, Osaka University (February)<br>
+            CIGS Conference on Macroeconomic Theory and Policy, Tokyo (May)<br>
+            Japanese Economic Association Spring Meeting, Tokyo, (May)<br>
+            Conference on Computing in Economics and Finance, Singapore (June)<br>
+            Asia Meeting of Econometric Society, East & Southeast Asia, Ho Chi Minh (August)<br>
+            Summer Workshop for Economic Theory, Quantitative Macroeconomics Session, Hokkaido (August)
+        </p>
+        <h2>Social Media</h2>
+        <p><a href="https://x.com/TNozomi_econ"><b>X</b></a></p>
+        <h2>Other Website</h2>
+        <p><a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-24KJ0835/">Kaken</a><br>
+            <a href="https://sites.google.com/view/nozomitakedaeconomics/home?authuser=0">Google Site</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nozomi Takeda. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
