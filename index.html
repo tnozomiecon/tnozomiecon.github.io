@@ -21,6 +21,22 @@
         header h1 {
             margin: 0;
         }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         main {
             padding: 20px;
             max-width: 1000px;
@@ -53,32 +69,41 @@
         <p>Economist | PhD Student in Quantitative Macroeconomics</p>
     </header>
 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cv">CV</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <main>
-        <!-- Profile Section -->
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I am Nozomi Takeda, a PhD student specializing in quantitative macroeconomics. My research focuses on demographic dynamics, fertility policies, and their macroeconomic impacts.</p>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Academic Profile</h2>
+            <p>I am currently enrolled in the Ph.D. program in Economics at the University of Tokyo. My areas of interest are macroeconomics, family macroeconomics, and immigration.</p>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2>CV</h2>
+            <p>Please download my CV from <a href="https://tnozomiecon.github.io/Resume.pdf">here</a>.</p>
         </section>
 
         <!-- Research Section -->
-        <section>
+        <section id="research">
             <h2>Research</h2>
-            <p>My research primarily investigates the effects of fertility treatment policies such as egg and embryo freezing on macroeconomic factors, including social security and public debt sustainability. In addition, I am interested in labor markets, firm heterogeneity, and the demographic impacts on macroeconomic policy.</p>
-        </section>
-
-        <!-- Publications Section -->
-        <section>
-            <h2>Publications</h2>
+            <h3>Work in Progress</h3>
             <ul>
-                <li>Takeda, N. (2024). "The Role of Demographic Changes in Macroeconomics", Journal of Monetary Economics.</li>
-                <li>Takeda, N. (2023). "Fertility Policies and Macroeconomic Implications", Economic Review.</li>
+                <li><a href="https://tnozomiecon.github.io/Takeda%282024%29.pdf">Career Choices, Timing of Childbirth, and Perceptions of Fecundity</a> (Master Thesis)</li>
+                <li>Now or Someday: Macroeconomic Implications of Egg Freezing</li>
+                <li><a href="https://tnozomiecon.github.io/PR_AEPR.pdf">Working Elderly in Japan</a> (with <a href="https://sites.google.com/site/sagirikitao/home?authuser=0">Sagiri Kitao</a>)</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-            <p>Email: nozomi.takeda@example.com</p>
+            <p>Email: nozomitakeda.econ[at]gmail.com</p>
         </section>
     </main>
 
