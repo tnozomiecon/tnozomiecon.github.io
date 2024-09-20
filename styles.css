@@ -1,4 +1,4 @@
-/* 基本設定 */
+/* 基本設定はそのまま */
 * {
     margin: 0;
     padding: 0;
@@ -8,20 +8,20 @@ html, body {
     height: 100%;
 }
 body {
-    font-family: 'Georgia', serif; /* よりアカデミックな印象に */
-    background-color: #1c1c1c; /* ダークグレーの背景 */
-    color: #eaeaea; /* 優しい白のテキスト */
+    font-family: 'Georgia', serif;
+    background-color: #1c1c1c;
+    color: #eaeaea;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* 横スクロールを無効化 */
+    overflow-x: hidden;
 }
 header {
-    background-color: #333; /* ダークなヘッダー */
+    background-color: #333;
     color: #f0f0f0;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    border-bottom: 3px solid #555; /* アカデミックで落ち着いた印象を与えるボーダー */
+    border-bottom: 3px solid #555;
 }
 header h1 {
     margin: 0;
@@ -30,67 +30,54 @@ header h1 {
 }
 nav {
     background-color: #222;
-    overflow: hidden;
     width: 100%;
+    position: relative;
 }
-nav a {
-    float: left;
-    display: block;
-    color: #eaeaea;
-    text-align: center;
+nav .menu-icon {
+    display: none; /* デスクトップでは非表示 */
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+}
+nav .nav-links a {
     padding: 14px 20px;
+    color: #eaeaea;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* 滑らかなホバー効果 */
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
-nav a:hover {
+nav .nav-links a:hover {
     background-color: #444;
     color: #fff;
 }
-main {
-    padding: 30px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: #2b2b2b; /* 少し明るめのダークグレー */
-    color: #f0f0f0;
-    flex: 1;
-    width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* シックな影で立体感 */
-    border-radius: 8px; /* 角を少し丸めて柔らかさを演出 */
-}
-section {
-    margin-bottom: 40px;
-}
-h2 {
-    color: #88c0d0; /* アカデミックな感じを出す落ち着いたブルー */
-    border-bottom: 2px solid #88c0d0;
-    padding-bottom: 5px;
-    font-size: 1.5em;
-}
-p {
-    line-height: 1.8; /* 読みやすさを重視 */
-    margin-bottom: 20px;
-}
-/* フッター固定 */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #eaeaea;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    flex-shrink: 0;
-    border-top: 3px solid #555; /* 上部にボーダーでアクセント */
-    font-size: 0.9em;
-}
 
-/* リンクのカスタマイズ */
-a {
-    color: #88c0d0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-a:hover {
-    color: #b48ead; /* ホバー時にパープル系に変化 */
+/* モバイル向けの設定 */
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block; /* モバイルで表示 */
+    }
+    nav .nav-links {
+        display: none; /* 初期状態で非表示 */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: #222;
+        z-index: 1;
+    }
+    nav .nav-links a {
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #444;
+    }
+    nav .nav-links.show {
+        display: flex; /* メニューアイコンをクリックすると表示 */
+    }
 }
