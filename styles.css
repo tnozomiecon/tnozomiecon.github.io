@@ -1,4 +1,4 @@
-/* 基本設定はそのまま */
+/* 基本設定 */
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +6,35 @@
 }
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* シンプルなフォント */
+    background-color: #fff; /* 白背景 */
+    color: #000; /* 黒文字 */
 }
-body {
-    font-family: 'Georgia', serif;
-    background-color: #1c1c1c;
-    color: #eaeaea;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
+
+/* ヘッダー */
 header {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: #f4f4f4;
+    color: #000;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    border-bottom: 3px solid #555;
+    border-bottom: 1px solid #ccc;
 }
+
 header h1 {
     margin: 0;
-    font-size: 2em;
-    letter-spacing: 2px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
+
+/* ナビゲーション */
 nav {
-    background-color: #222;
+    background-color: #333;
     width: 100%;
     position: relative;
+    text-align: center;
 }
 nav .menu-icon {
     display: none; /* デスクトップでは非表示 */
@@ -39,45 +42,73 @@ nav .menu-icon {
     font-size: 30px;
     padding: 10px;
     cursor: pointer;
-    float: right;
-    margin-right: 20px;
 }
 nav .nav-links {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 nav .nav-links a {
-    padding: 14px 20px;
-    color: #eaeaea;
+    padding: 15px 20px;
+    color: #fff;
     text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    display: block;
 }
 nav .nav-links a:hover {
-    background-color: #444;
-    color: #fff;
+    background-color: #555;
 }
 
-/* モバイル向けの設定 */
+/* メインコンテンツ */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* セクション間のマージン */
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    margin-top: auto; /* フッターを常に下に配置 */
+}
+
+/* モバイル用のレスポンシブメニュー */
 @media (max-width: 768px) {
     nav .menu-icon {
-        display: block; /* モバイルで表示 */
+        display: block; /* モバイルでは表示 */
     }
     nav .nav-links {
         display: none; /* 初期状態で非表示 */
         flex-direction: column;
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        background-color: #222;
-        z-index: 1;
-    }
-    nav .nav-links a {
-        text-align: left;
-        padding: 10px 20px;
-        border-bottom: 1px solid #444;
+        background-color: #333;
     }
     nav .nav-links.show {
         display: flex; /* メニューアイコンをクリックすると表示 */
+    }
+    nav .nav-links a {
+        padding: 10px;
+        border-bottom: 1px solid #555;
     }
 }
