@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2025.4.17)  2 JUN 2025 13:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2025.4.17)  10 JUN 2025 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,12 +257,17 @@ Overfull \hbox (9.9079pt too wide) in paragraph at lines 31--36
  []
 
 
-Overfull \hbox (9.9079pt too wide) in paragraph at lines 70--73
+Overfull \hbox (9.9079pt too wide) in paragraph at lines 58--61
 [] 
  []
 
 
-Overfull \hbox (9.9079pt too wide) in paragraph at lines 76--81
+Overfull \hbox (9.9079pt too wide) in paragraph at lines 64--69
+[] 
+ []
+
+
+Overfull \hbox (9.9079pt too wide) in paragraph at lines 72--76
 [] 
  []
 
@@ -271,11 +276,6 @@ Overfull \hbox (9.9079pt too wide) in paragraph at lines 76--81
 [1
 
 ]
-Overfull \hbox (9.9079pt too wide) in paragraph at lines 84--88
-[] 
- []
-
-
 
 [2] (out/Resume.aux)
  ***********
@@ -288,10 +288,10 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
 Here is how much of TeX's memory you used:
  8816 strings out of 473191
  138233 string characters out of 5715826
- 561577 words of memory out of 5000000
+ 562577 words of memory out of 5000000
  32009 multiletter control sequences out of 15000+600000
  563609 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,1247b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Resume.dvi (2 pages, 7096 bytes).
+Output written on out/Resume.dvi (2 pages, 7156 bytes).

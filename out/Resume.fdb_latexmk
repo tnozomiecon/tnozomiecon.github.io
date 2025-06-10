@@ -1,6 +1,6 @@
 # Fdb version 4
-["latex"] 1748839242.25351 "/Users/nozon/Documents/GitHub/tnozomiecon.github.io/Resume.tex" "out/Resume.dvi" "Resume" 1748839242.53183 0
-  "/Users/nozon/Documents/GitHub/tnozomiecon.github.io/Resume.tex" 1748839241.63245 4357 13d45a7ff39e4b8cffacc21fd092fda8 ""
+["latex"] 1749529824.10167 "/Users/nozon/Documents/GitHub/tnozomiecon.github.io/Resume.tex" "out/Resume.dvi" "Resume" 1749529824.39753 0
+  "/Users/nozon/Documents/GitHub/tnozomiecon.github.io/Resume.tex" 1749529823.92807 4491 1b766b70743fe5d9f1e59e66214116a5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -58,9 +58,9 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/latex.fmt" 1744885726 3345657 a059d2ae5a116aaf79f6848b0217de40 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Resume.tex" 1748839241.63245 4357 13d45a7ff39e4b8cffacc21fd092fda8 ""
-  "out/Resume.aux" 1748839242.5164 128 8ec89a09013e497d5b92563b73b0583f "latex"
-  "out/Resume.out" 1748839242.50924 0 d41d8cd98f00b204e9800998ecf8427e "latex"
+  "Resume.tex" 1749529823.92807 4491 1b766b70743fe5d9f1e59e66214116a5 ""
+  "out/Resume.aux" 1749529824.38057 128 8ec89a09013e497d5b92563b73b0583f "latex"
+  "out/Resume.out" 1749529824.37194 0 d41d8cd98f00b204e9800998ecf8427e "latex"
   (generated)
   "out/Resume.aux"
   "out/Resume.dvi"
